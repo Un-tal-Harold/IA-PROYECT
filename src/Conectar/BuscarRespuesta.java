@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class BuscarRespuesta {
     public void Buscarporpregunta(int idPregunta){
-        String consulta ="SELECT  respuesta  FROM respuestas WHERE idPregunta=(?);";
+        String consulta ="SELECT  Respuestas  FROM Respuestas WHERE ID=(?);";
         Conectar con = new Conectar();
         try{
             CallableStatement cs = con.conectar().prepareCall(consulta);
@@ -19,7 +19,7 @@ public class BuscarRespuesta {
             
             if(rs.next()){
                 String id;
-                id=rs.getString("respuesta");
+                id=rs.getString("Respuestas");
                 System.out.println(id);
             }else{
                 System.out.println("Lo sentimos en este momento no podemos resolver su pregunta");

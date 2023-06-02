@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class buscarPregunta {
     
     public static int Buscarporpregunta(String pregunta){
-        String consulta ="SELECT  idPregunta  FROM preguntas WHERE pregunta=(?);";
+        String consulta ="SELECT  ID  FROM Preguntas WHERE Pregunta=(?);";
         Conectar con = new Conectar();
         int id = 0;
         try{
@@ -21,10 +21,10 @@ public class buscarPregunta {
             ResultSet rs = cs.executeQuery();
             
             if(rs.next()){
-                id=rs.getInt("idPregunta");
+                id=rs.getInt("ID");
                 //System.out.println(id);
             }else{
-                System.out.println("Lo sentimos en este momento no podemos resolver su pregunta");
+                //System.out.println("Lo sentimos en este momento no podemos resolver su pregunta");
             }
         }catch(SQLException ex){
             System.out.println("Error: " + ex.getMessage());
