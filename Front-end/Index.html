@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Styles/Responsive Bar.css">
+    <link rel="stylesheet" href="Styles/AutocompleteBar.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+
+    <title>Cloud IA</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class="bx bx-menu siderbarOpen"></i>
+            <span class="logo"><a href="#">Cloud IA</a></span>
+             <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">Cloud IA</a></span>
+                    <i class='bx bx-x siderbarClose' ></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Autors</a></li>
+                </ul>
+             </div>
+
+             <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon' ></i>
+                    <i class='bx bx-sun sun' ></i>
+                </div>
+
+                <div class="searchBox">
+                    <div class="searhToggle">
+                        <i class='bx bx-x cancel' ></i>
+                        <i class='bx bx-search search' ></i>
+                    </div>
+
+                        <div id="newtask" class="search-field">                         
+                                    <a href="" target="_blank" hidden></a>
+                                    <input  type="text" placeholder="Que es...">
+                                      <div class="autocom-box">
+                                       <!-- here list are inserted from javascript -->
+                                      </div>
+                                      <i id="push" class="bx bx-search icon"></i>  
+                       </div>
+                   </div>
+                </div>
+           </div>
+           <div id="tasks">
+                                        
+
+           </div>
+ </nav>
+
+
+    <script src="JScript/script.js"></script>
+    <script src="JScript/autoScript.js"></script>
+    <script src="JScript/autosuggestions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    
+</body>
+</html>
